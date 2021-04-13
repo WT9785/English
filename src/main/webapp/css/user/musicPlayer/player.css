@@ -1,0 +1,1571 @@
+/* element width */
+.w_10 {
+    width: 10%;
+}
+
+.w_20 {
+    width: 20%;
+}
+
+.w_25 {
+    width: 25%;
+}
+
+.w_30 {
+    width: 30%;
+}
+
+.w_33 {
+    width: 33.33%;
+}
+
+.w_50 {
+    width: 50%;
+}
+
+.w_60 {
+    width: 60%;
+}
+
+.w_70 {
+    width: 70%;
+}
+
+.w_80 {
+    width: 80%;
+}
+
+.w_100 {
+    width: 100%;
+}
+
+/* This <a> element style */
+.a_btn {
+    display: block;
+    text-decoration: none;
+}
+
+.a_btn_txt {
+    text-align: center;
+}
+
+.a_btn_no_txt {
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+/* This <a> element border radius style */
+.a_btn_rb {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.a_btn_rb3 {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* Clear float element */
+.c_wap:after {
+    content: ".";
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+}
+
+.c_zm {
+    zoom: 1;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #e3e3e3;
+}
+
+a:hover {
+    color: #66cc00;
+}
+
+/* CSS Document */
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    background: url(../../../images/user/musicPlayer/p_bg.jpg) center top #191616 no-repeat;
+    background-size: cover;
+    font: 12px/1.5 '\5FAE\8F6F\96C5\9ED1';
+    color: #999;
+}
+
+.mian_palyer {
+    height: 100%;
+    min-width: 1200px;
+    min-height: 640px;
+}
+
+/* top */
+.p_top {
+    background: #000;
+    background: rgba(0, 0, 0, 0.2);
+    filter: "alpha(opacity=20)";
+    -ms-filter: "alpha(opacity=20)";
+    box-shadow: 0 0 0 1px #221f1a;
+    height: 60px;
+}
+
+:root .p_top {
+    filter: "alpha(opacity=20)";
+}
+
+.p_top .p_logo {
+    margin: 10px 0 0 60px;
+}
+
+.p_top .p_sc_t_box {
+    border: #403c3c solid 1px;
+    background: #1b1818;
+    height: 30px;
+    margin: 15px 0 0 105px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 247px;
+    padding-left: 15px;
+}
+
+.p_sc_t_box .sc_list {
+    width: 65px;
+}
+
+.p_sc_t_box .sc_list a.p_seh_list_a {
+    background: #1b1818;
+    position: relative;
+    z-index: 9;
+    height: 30px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    border-radius: 15px 0 0 15px;
+    line-height: 28px;
+    text-indent: 13px;
+}
+
+.p_sc_t_box .sc_list a.a_btn b {
+    width: 12px;
+    height: 6px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -272px 0 no-repeat;
+    margin: 13px 5px 0 0;
+    float: right;
+    position: static;
+}
+
+.p_sc_t_box .sc_l_hover a.a_btn b {
+    background-position: -272px -6px;
+}
+
+.p_sc_t_box .p_seh_sort {
+    left: -1px;
+    top: 16px;
+    background: #1b1818;
+    border: #403c3c solid 1px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    width: 64px;
+    z-index: 8;
+    padding: 13px 0 0 0;
+    overflow: hidden;
+    display: none;
+}
+
+.p_sc_t_box .p_seh_sort a.a_btn {
+    text-indent: 13px;
+    padding: 5px 0;
+    position: relative;
+}
+
+.p_sc_t_box .p_seh_sort a.a_btn:hover {
+    background: #000;
+    background: rgba(0, 0, 0, 0.1);
+    filter: "alpha(opacity=10)";
+    -ms-filter: "alpha(opacity=10)";
+}
+
+:root .p_sc_t_box .p_seh_sort a.a_btn:hover {
+    filter: "alpha(opacity=10)";
+}
+
+.p_sc_t_box .sc_txt {
+    width: 240px;
+}
+
+.p_sc_t_box .sc_txt input.p_sc_v {
+    background: none;
+    border: none;
+    height: 28px;
+    line-height: 26px;
+    padding: 0 5px;
+    outline: none;
+    color: #fff;
+    width: 190px;
+}
+
+.p_sc_t_box .sc_txt a.p_sc_btn {
+    padding: 7px 10px;
+}
+
+.p_sc_t_box .sc_txt a.p_sc_btn i.ico {
+    width: 16px;
+    height: 16px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -192px 0 no-repeat;
+}
+
+.p_sc_t_box .sc_txt a.p_sc_btn:hover i.ico {
+    background-position: -192px -16px;
+}
+
+.p_top .p_login, .p_top .p_logon {
+    line-height: 59px;
+    margin: 0 60px 0 0;
+    display: none;
+}
+
+.p_top .p_logon {
+    width: 130px;
+}
+
+.p_top .p_logon span.u_head {
+    width: 34px;
+    height: 34px;
+    border: #fff solid 2px;
+    overflow: hidden;
+    line-height: 0px;
+    margin: 10px 5px 0 0;
+}
+
+.p_top .p_logon a.u_name {
+    width: 85px;
+}
+
+.p_top .p_logon ul.abs {
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    background: rgba(0, 0, 0, 0.8);
+    filter: "alpha(opacity=80)";
+    -ms-filter: "alpha(opacity=80)";
+    z-index: 10;
+    display: none;
+}
+
+:root .p_top .p_logon ul.abs {
+    filter: "alpha(opacity=80)";
+}
+
+.p_top .p_logon ul.abs li {
+    line-height: 30px;
+    float: none;
+}
+
+.p_top .p_logon ul.abs li a.a_btn {
+    padding: 5px 0;
+}
+
+.p_top .p_logon ul.abs li a.out_btn {
+    border-top: #1f1f24 solid 1px;
+    margin: 5px 0 0 0;
+}
+
+.p_top .p_logon ul.abs li a.a_btn:hover {
+    background: #000;
+    background: rgba(0, 0, 0, 0.1);
+    filter: "alpha(opacity=10)";
+    -ms-filter: "alpha(opacity=10)";
+}
+
+:root .p_top .p_logon ul.abs li a.a_btn:hover {
+    filter: "alpha(opacity=10)";
+}
+
+/* 播放器 */
+.p_palyer_box {
+    height: 114px;
+}
+
+.p_palyer_box .jp-infos {
+    padding: 14px 0 14px 40px;
+}
+
+.p_palyer_box .jp-infos .p_now {
+    display: none;
+}
+
+.p_palyer_box .jp-infos .p_now span.u_head {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.p_palyer_box .jp-infos .p_now h2.sing_title, .p_palyer_box .jp-infos .p_now h2.sing_name {
+    margin-top: 5px;
+}
+
+.p_palyer_box .jp-infos .p_now h2.sing_title {
+    margin-top: 15px;
+    max-width: 350px;
+    _width: 35px;
+}
+
+.p_palyer_box .jp-infos .p_now h2.sing_name {
+}
+
+.p_palyer_box .jp-infos .p_noplay {
+    display: none;
+}
+
+/* 操作 */
+.p_palyer_box .action_btn {
+    margin: 44px 20px 0 0;
+    width: 150px;
+}
+
+.p_palyer_box .action_btn a.a_btn {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin: 0 10px;
+    outline: none;
+}
+
+.p_palyer_box .action_btn a.a_btn i.ico {
+    width: 20px;
+    height: 20px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -168px -64px no-repeat;
+}
+
+.p_palyer_box .action_btn a.jp-download i.ico {
+    background-position: -188px -64px;
+}
+
+.p_palyer_box .action_btn a.jp-share i.ico {
+    background-position: -208px -64px;
+}
+
+.p_palyer_box .action_btn a.jp-collect:hover i.ico {
+    background-position: -229px -64px;
+}
+
+.p_palyer_box .action_btn a.sel_coll i.ico,
+.p_palyer_box .action_btn a.sel_coll:hover i.ico {
+    background-position: -268px -88px;
+}
+
+.p_palyer_box .action_btn a.jp-download:hover i.ico {
+    background-position: -249px -64px;
+}
+
+.p_palyer_box .action_btn a.jp-share:hover i.ico {
+    background-position: -269px -64px;
+}
+
+/* 控制按钮 */
+.p_palyer_box .jp-controls {
+    margin: 20px 20px 0 0;
+    width: 214px;
+}
+
+.p_palyer_box .jp-controls a.a_btn {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.p_palyer_box .jp-controls a.a_btn i.ico {
+    width: 32px;
+    height: 32px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -168px -32px no-repeat;
+}
+
+.p_palyer_box .jp-controls a.wsp_c_play,
+.p_palyer_box .jp-controls a.wsp_c_pause,
+.p_palyer_box .jp-controls a.wsp_c_play i.ico,
+.p_palyer_box .jp-controls a.wsp_c_pause i.ico {
+    width: 60px;
+    height: 60px;
+}
+
+.p_palyer_box .jp-controls a.wsp_c_prev,
+.p_palyer_box .jp-controls a.wsp_c_next {
+    margin-top: 17px;
+}
+
+.p_palyer_box .jp-controls a.wsp_c_play i.ico {
+    background-position: 0 -88px;
+}
+
+.p_palyer_box .jp-controls a.wsp_c_pause i.ico {
+    background-position: -120px -88px;
+}
+
+.p_palyer_box .jp-controls a.wsp_c_prev i.ico {
+    background-position: -200px -32px;
+}
+
+.p_palyer_box .jp-controls a.wsp_c_play:hover i.ico {
+    background-position: -60px -88px;
+}
+
+.p_palyer_box .jp-controls a.wsp_c_pause:hover i.ico {
+    background-position: -180px -88px;
+}
+
+.p_palyer_box .jp-controls a.wsp_c_prev:hover i.ico {
+    background-position: -264px -32px;
+}
+
+.p_palyer_box .jp-controls a.wsp_c_next:hover i.ico {
+    background-position: -232px -32px;
+}
+
+/* 循环模式 */
+.p_palyer_box .jp-repeat {
+    margin: 44px 20px 0 0;
+    width: 100px;
+}
+
+.p_palyer_box .jp-repeat a.repeat:link,
+.p_palyer_box .jp-repeat a.repeat:visited {
+    border: #403c3c solid 1px;
+    margin-top: -1px;
+    width: 78px;
+    padding: 5px 10px;
+    color: #b3a5a5;
+}
+
+.p_palyer_box .jp-repeat a.repeat i.ico {
+    width: 16px;
+    height: 16px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -144px 0 no-repeat;
+    margin: 0 10px 0 0;
+}
+
+.p_palyer_box .jp-repeat a.repeat-01 i.ico {
+    background-position: -144px 0;
+}
+
+.p_palyer_box .jp-repeat a.repeat-02 i.ico {
+    background-position: -160px 0;
+}
+
+.p_palyer_box .jp-repeat a.repeat-03 i.ico {
+    background-position: -176px 0;
+}
+
+.p_palyer_box .jp-repeat a.repeat b.abs {
+    width: 7px;
+    height: 7px;
+    right: 0;
+    bottom: 0;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -284px -7px no-repeat;
+}
+
+.p_palyer_box .jp-repeat .repeat_lists {
+    left: 0;
+    top: 0;
+    background: #000;
+    background: rgba(0, 0, 0, 0.8);
+    filter: "alpha(opacity=80)";
+    -ms-filter: "alpha(opacity=80)";
+    z-index: 9;
+    display: none;
+}
+
+.p_palyer_box .jp-repeat .repeat_lists a.repeat {
+    background: none;
+}
+
+.p_palyer_box .jp-repeat .repeat_lists a.repeat-02 i.ico {
+    background-position: -160px 0;
+}
+
+.p_palyer_box .jp-repeat .repeat_lists a.repeat-03 i.ico {
+    background-position: -176px 0;
+}
+
+.p_palyer_box .jp-repeat a.a_btn:hover,
+.p_palyer_box .jp-repeat .repeat_lists a.a_btn:hover {
+    color: #fff;
+}
+
+.p_palyer_box .jp-repeat a.repeat-01:hover i.ico,
+.p_palyer_box .jp-repeat .repeat_lists a.repeat-01:hover i.ico {
+    background-position: -144px -16px;
+}
+
+.p_palyer_box .jp-repeat .repeat_lists a.repeat-02:hover i.ico {
+    background-position: -160px -16px;
+}
+
+.p_palyer_box .jp-repeat .repeat_lists a.repeat-03:hover i.ico {
+    background-position: -176px -16px;
+}
+
+/* 音量 时间*/
+.p_palyer_box .jp-toggles {
+    margin: 50px 20px 0 0;
+    width: 100px;
+}
+
+.p_palyer_box .jp-toggles input.wsp_v_mute {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -208px 0 no-repeat;
+    outline: none;
+    cursor: pointer;
+}
+
+.p_palyer_box .jp-toggles input.wsp_v_mute:hover {
+    background-position: -208px -16px;
+}
+
+.p_palyer_box .jp-toggles input.wsp_v_mute_sel, .p_palyer_box .jp-toggles input.wsp_v_mute_sel:hover {
+    background-position: -256px -16px;
+}
+
+.p_palyer_box .jp-toggles .wsp_v_total {
+    background: #7d7a77;
+    height: 5px;
+    margin: 5px 0 0 10px;
+    width: 70px;
+    display: inline;
+    cursor: pointer;
+}
+
+.p_palyer_box .jp-toggles .wsp_v_total .wsp_v_current {
+    background: #66cc00;
+    height: 5px;
+    cursor: pointer;
+}
+
+.p_palyer_box .jp-toggles span.wsp_currentTime {
+    text-align: right;
+    color: #fff;
+    display: block;
+    margin: 15px 0 0 0;
+}
+
+/* 进度条 */
+.p_palyer_box .wsp_p_total {
+    width: 100%;
+    height: 5px;
+    background: #403c39;
+    cursor: pointer;
+}
+
+.p_palyer_box .wsp_p_total .wsp_p_buffered {
+    height: 5px;
+    background: #7d7a77;
+    cursor: pointer;
+}
+
+.p_palyer_box .wsp_p_total .wsp_p_buffered .wsp_p_current {
+    height: 5px;
+    background: #66cc00;
+    cursor: pointer;
+}
+
+/* 内容 列表 菜单 */
+.p_lists_box {
+    width: 100%;
+    top: 174px;
+    bottom: 70px;
+}
+
+.p_lists_box .p_lists {
+    padding: 0 330px 0 260px;
+    height: 100%;
+}
+
+/* left 菜单 */
+.p_menu_left {
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100%;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+/*.p_menu_left ul{margin-top:20px;}*/
+.p_menu_left li, .p_menu_left dd {
+    padding: 0 20px 0 15px;
+    margin-bottom: 1px;
+}
+
+.p_menu_left li a.a_btn:link, .p_menu_left li a.a_btn:visited,
+.p_menu_left dd a.a_btn:link, .p_menu_left dd a.a_btn:visited {
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #b3a5a5;
+}
+
+.p_menu_left li a.a_btn i.ico, .p_menu_left dd a.a_btn i.ico {
+    width: 28px;
+    height: 28px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) 0 -32px no-repeat;
+    margin: 13px 20px 0 20px;
+    position: relative;
+}
+
+.p_menu_left li a.mu_02 i.ico {
+    background-position: -28px -32px;
+}
+
+.p_menu_left li a.mu_03 i.ico {
+    background-position: -56px -32px;
+}
+
+.p_menu_left li a.mu_04 i.ico {
+    background-position: -84px -32px;
+}
+
+.p_menu_left li a.mu_05 i.ico {
+    background-position: -112px -32px;
+}
+
+.p_menu_left dd a.mu_06 i.ico {
+    background-position: -140px -32px;
+}
+
+.p_menu_left li a.a_btn:hover, .p_menu_left dd a.a_btn:hover,
+.p_menu_left li.p_sel a.a_btn:link, .p_menu_left li.p_sel a.a_btn:visited,
+.p_menu_left dd.p_sel a.a_btn:link, .p_menu_left dd.p_sel a.a_btn:visited {
+    color: #fff;
+}
+
+/*.p_menu_left li a.mu_01:hover i.ico,*/
+.p_menu_left li.curr a.mu_01 i.ico {
+    background-position: 0 -60px;
+}
+
+/*.p_menu_left li a.mu_02:hover i.ico,*/
+.p_menu_left li.curr a.mu_02 i.ico {
+    background-position: -28px -60px;
+}
+
+/*.p_menu_left li a.mu_03:hover i.ico,*/
+.p_menu_left li.curr a.mu_03 i.ico {
+    background-position: -56px -60px;
+}
+
+/*.p_menu_left li a.mu_04:hover i.ico,*/
+.p_menu_left li.p_sel a.mu_04 i.ico, .p_menu_left li.curr a.mu_04 i.ico {
+    background-position: -84px -60px;
+}
+
+/*.p_menu_left li a.mu_05:hover i.ico,*/
+.p_menu_left li.p_sel a.mu_05 i.ico, .p_menu_left li.curr a.mu_05 i.ico {
+    background-position: -112px -60px;
+}
+
+/*.p_menu_left dd a.mu_06:hover i.ico,*/
+.p_menu_left dd.p_sel a.mu_06 i.ico, .p_menu_left li.curr a.mu_06 i.ico {
+    background-position: -140px -60px;
+}
+
+.p_menu_left li a.a_btn:hover,
+.p_menu_left li.curr a.a_btn,
+.p_menu_left dd a.a_btn:hover,
+.p_menu_left dd.curr a.a_btn {
+    background: #000;
+    background: rgba(0, 0, 0, 0.1);
+    filter: "alpha(opacity=10)";
+    -ms-filter: "alpha(opacity=10)";
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    transition-property: background-color;
+}
+
+:root .p_menu_left li a.a_btn:hover,
+:root .p_menu_left li.curr a.a_btn,
+:root .p_menu_left dd a.a_btn:hover,
+:root .p_menu_left dd.curr a.a_btn {
+    filter: "alpha(opacity=100)" \9 \0;
+}
+
+.p_menu_left li.p_sel a.mu_01 i.ico,
+.p_menu_left li.p_sel a.mu_02 i.ico,
+.p_menu_left li.p_sel a.mu_03 i.ico,
+.p_menu_left dd.p_sel a.mu_06 i.ico {
+    background-position: -240px -88px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.p_menu_left li.p_sel a.mu_04 i.ico,
+.p_menu_left dd.p_sel a.mu_05 i.ico {
+    background-position: -84px -60px;
+}
+
+.p_menu_left.abs.mCustomScrollbar._mCS_3.mCS_no_scrollbar {
+    border-top: #403c3c solid 1px;
+    margin-top: 20px;
+}
+
+.p_menu_left dt {
+    padding: 20px 0 20px 20px;
+}
+
+.p_menu_left dt h2 {
+    color: #fff;
+}
+
+.p_menu_left dt a.a_btn:link, .p_menu_left dt a.a_btn:visited {
+    border: #403c3c solid 1px;
+    width: 68px;
+    height: 18px;
+    line-height: 18px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    color: #b3a5a5;
+    margin: 2px 10px 0 0;
+}
+
+.p_menu_left dt a.a_btn i.ico {
+    width: 14px;
+    height: 14px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -225px -2px no-repeat;
+    margin: 3px 5px 0 5px;
+}
+
+.p_menu_left dt a.a_btn:hover {
+    color: #fff;
+    background: #3c4251;
+    border: #3c4251 solid 1px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    transition-property: background-color;
+}
+
+.p_menu_left dt a.a_btn:hover i.ico {
+    background-position: -225px -18px;
+}
+
+.p_menu_left li a.mu_01 b.add_tip {
+    width: 20px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -257px -112px no-repeat;
+    display: none;
+}
+
+/* 内容 */
+.p_lists_box .p_cont_auto {
+    height: 100%;
+}
+
+.p_song_lists, .p_shan_lists, .p_dj_lists {
+    display: none;
+}
+
+/* 列表 title */
+.p_song_lists .p_song_t, .p_shan_lists .p_song_t, .p_dj_lists .p_song_t {
+    padding: 0 0 0 60px;
+    color: #e0d5d5;
+    height: 69px;
+    line-height: 78px;
+    border-bottom: #403c3c solid 1px;
+}
+
+.p_song_lists .p_song_t .ck_act, .p_shan_lists .p_song_t .ck_act, .p_dj_lists .p_song_t .ck_act {
+    width: 60px;
+    left: 0;
+    top: 0;
+}
+
+.p_shan_lists .p_song_t .w_80, .p_dj_lists .p_song_t .w_80 {
+    text-indent: 100px;
+}
+
+.p_song_lists .p_items, .p_shan_lists .p_items, .p_dj_lists .p_items {
+    top: 70px;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.p_song_lists .p_items .p_row {
+    padding: 0 0 0 65px;
+    height: 59px;
+    border-bottom: #403c3c solid 1px;
+    line-height: 58px;
+}
+
+.p_song_lists .p_items .p_row .ck_act,
+.p_shan_lists .p_items .p_row .ck_act,
+.p_dj_lists .p_items .p_row .ck_act {
+    width: 45px;
+    left: 0;
+    top: 0;
+    padding: 22px 0 0 20px;
+    line-height: normal;
+}
+
+/* 列表 多选 */
+.p_song_lists .p_items .p_row .ck_act input[type=checkbox],
+.p_shan_lists .p_items .p_row .ck_act input[type=checkbox],
+.p_dj_lists .p_items .p_row .ck_act input[type=checkbox] {
+    appearance: none;
+    -moz-appearance: normal;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -240px 0 no-repeat;
+    outline: none;
+}
+
+.p_song_lists .p_items .p_row .ck_act input[type=checkbox]:hover,
+.p_shan_lists .p_items .p_row .ck_act input[type=checkbox]:hover,
+.p_dj_lists .p_items .p_row .ck_act input[type=checkbox]:hover {
+    background-position: -240px -16px;
+}
+
+.p_song_lists .p_items .p_row .ck_act input[type=checkbox]:checked,
+.p_shan_lists .p_items .p_row .ck_act input[type=checkbox]:checked,
+.p_dj_lists .p_items .p_row .ck_act input[type=checkbox]:checked {
+    background-position: -256px 0;
+}
+
+.p_song_lists .p_items .p_row .row_item .row_s_tl .i_sort {
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    line-height: 28px;
+    text-align: center;
+    margin: 16px 10px 0 0;
+    display: inline;
+}
+
+.p_song_lists .p_items .now_plays .row_item .row_s_tl .i_sort {
+    text-indent: -999px;
+    background: url(.../../../images/user/musicPlayer/p_icon.png) -240px -88px no-repeat;
+}
+
+.p_song_lists .p_items .p_row .row_item a:link, .p_song_lists .p_items .p_row .row_item a:visited,
+.p_shan_lists .p_items .p_row .row_item a:link, .p_shan_lists .p_items .p_row .row_item a:visited,
+.p_dj_lists .p_items .p_row .row_item a:link, .p_dj_lists .p_items .p_row .row_item a:visited {
+    color: #b3a5a5;
+    cursor: default;
+}
+
+.p_song_lists .p_items .p_row .w_20 a:link, .p_song_lists .p_items .p_row .w_20 a:visited,
+.p_shan_lists .p_items .p_row .w_20 a:link, .p_shan_lists .p_items .p_row .w_20 a:visited,
+.p_dj_lists .p_items .p_row .w_20 a:link, .p_dj_lists .p_items .p_row .w_20 a:visited,
+.p_shan_lists .p_items .p_row .row_item a.row_s_page:link, .p_shan_lists .p_items .p_row .row_item a.row_s_page:visited,
+.p_dj_lists .p_items .p_row .row_item a.row_s_page:link, .p_dj_lists .p_items .p_row .row_item a.row_s_page:visited {
+    cursor: pointer;
+}
+
+.p_song_lists .p_items .p_row .ck_act b {
+    width: 17px;
+    height: 17px;
+    *font-size: 0;
+    background: url(../../../images/user/musicPlayer/p_icon.png) no-repeat -272px -14px;
+    float: right;
+    margin: 0 5px 0 0;
+}
+
+/* 列表 action */
+.p_song_lists .p_items .p_row .row_item .act_box,
+.p_shan_lists .p_items .p_row .row_item .act_box,
+.p_dj_lists .p_items .p_row .row_item .act_box {
+    width: 150px;
+    right: 5%;
+    top: 0;
+    display: none;
+}
+
+.p_song_lists .p_history .p_row .row_item .act_box {
+    width: 180px;
+}
+
+.p_song_lists .p_collect .p_row .row_item .act_box {
+    width: 120px;
+}
+
+.p_shan_lists .p_items .p_row .row_item .act_box {
+    width: 90px;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.a_btn,
+.p_shan_lists .p_items .p_row .row_item .act_box a.a_btn,
+.p_dj_lists .p_items .p_row .row_item .act_box a.a_btn {
+    width: 16px;
+    height: 16px;
+    padding: 7px;
+    margin: 14px 0;
+    display: inline;
+    cursor: pointer;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.a_btn i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.a_btn i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.a_btn i.ico {
+    width: 16px;
+    height: 16px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -16px 0 no-repeat;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.pause_btn i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.pause_btn i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.pause_btn i.ico {
+    background-position: 0 0;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.add_btn i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.add_btn i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.add_btn i.ico {
+    background-position: -96px 0;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.dow_btn i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.dow_btn i.ico {
+    background-position: -48px 0;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.share_btn i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.share_btn i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.share_btn i.ico {
+    background-position: -64px 0;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.coll_btn i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.coll_btn i.ico {
+    background-position: -32px 0;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.sel_coll i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.sel_coll i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.sel_coll i.ico {
+    background-position: -240px -116px;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.del_btn i.ico {
+    background-position: -80px 0;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.play_btn:hover i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.play_btn:hover i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.play_btn:hover i.ico {
+    background-position: -16px -16px;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.pause_btn:hover i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.pause_btn:hover i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.pause_btn:hover i.ico {
+    background-position: 0 -16px;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.add_btn:hover i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.add_btn:hover i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.add_btn:hover i.ico {
+    background-position: -96px -16px;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.dow_btn:hover i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.dow_btn:hover i.ico {
+    background-position: -48px -16px;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.share_btn:hover i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.share_btn:hover i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.share_btn:hover i.ico {
+    background-position: -64px -16px;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.coll_btn:hover i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.coll_btn:hover i.ico {
+    background-position: -32px -16px;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.sel_coll:hover i.ico,
+.p_shan_lists .p_items .p_row .row_item .act_box a.sel_coll:hover i.ico,
+.p_dj_lists .p_items .p_row .row_item .act_box a.sel_coll:hover i.ico {
+    background-position: -240px -116px;
+}
+
+.p_song_lists .p_items .p_row .row_item .act_box a.del_btn:hover i.ico {
+    background-position: -80px -16px;
+}
+
+/* 列表 选择 */
+.p_song_lists .p_items .p_row:hover,
+.p_shan_lists .p_items .p_row:hover,
+.p_dj_lists .p_items .p_row:hover,
+.p_song_lists .p_items .now_plays,
+.p_shan_lists .p_items .now_plays,
+.p_dj_lists .p_items .now_plays {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    filter: "alpha(opacity=5)";
+    -ms-filter: "alpha(opacity=5)";
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    transition-property: background-color;
+}
+
+:root .p_song_lists .p_items .p_row:hover,
+:root .p_shan_lists .p_items .p_row:hover,
+:root .p_dj_lists .p_items .p_row:hover,
+:root .p_song_lists .p_items .now_plays,
+:root .p_shan_lists .p_items .now_plays,
+:root .p_dj_lists .p_items .now_plays {
+    filter: "alpha(opacity=100)" \9 \0;
+}
+
+.p_song_lists .p_items .p_row:hover .row_item a,
+.p_shan_lists .p_items .p_row:hover .row_item a,
+.p_dj_lists .p_items .p_row:hover .row_item a {
+    color: #e0d5d5;
+}
+
+.p_shan_lists {
+}
+
+.p_dj_lists {
+}
+
+.p_shan_lists .p_items .p_row, .p_dj_lists .p_items .p_row {
+    padding: 0 0 0 60px;
+    height: 99px;
+    border-bottom: #403c3c solid 1px;
+    line-height: 98px;
+}
+
+.p_shan_lists .p_items .p_row .ck_act,
+.p_dj_lists .p_items .p_row .ck_act {
+    padding: 42px 0 0 20px;
+}
+
+.p_dj_lists .p_items .p_row .ck_act {
+    padding: 22px 0 0 20px;
+}
+
+.p_dj_lists .p_items .p_row .ck_act .i_sort {
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+    line-height: 28px;
+    text-align: center;
+    margin: 16px 10px 0 0;
+    display: inline;
+    font-weight: bold;
+}
+
+/*.p_dj_lists .p_items .now_plays .ck_act .i_sort{text-indent:-999px; background:url(../../../images/user/musicPlayer/p_icon.png) -240px -88px no-repeat;}*/
+
+.p_shan_lists .p_items .p_row .row_s_page,
+.p_dj_lists .p_items .p_row .row_s_page {
+    margin-right: 20px;
+}
+
+.p_shan_lists .p_items .p_row .row_item .act_box a.a_btn,
+.p_dj_lists .p_items .p_row .row_item .act_box a.a_btn {
+    margin: 34px 0;
+}
+
+/* 列表为空 */
+.p_lists_box .p_cont_auto .p_items_null {
+    margin-top: 120px;
+    display: none;
+    position: relative;
+    z-index: 9999;
+}
+
+.p_lists_box .p_cont_auto .p_items_null dl {
+    width: 330px;
+    margin: 0 auto;
+}
+
+.p_lists_box .p_cont_auto .p_items_null dl dt {
+    width: 90px;
+}
+
+.p_lists_box .p_cont_auto .p_items_null dl dt i.ico {
+    width: 90px;
+    height: 82px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) 0 -148px no-repeat;
+}
+
+.p_lists_box .p_cont_auto .p_items_null dl dd {
+    width: 200px;
+    padding-left: 40px;
+}
+
+.p_lists_box .p_cont_auto .p_items_null dl dd h4 {
+    color: #fff;
+}
+
+.p_lists_box .p_cont_auto .p_items_null dl dd p {
+    line-height: 27px;
+}
+
+.p_lists_box .p_cont_auto .p_items_null dl dd a.a_btn:link,
+.p_lists_box .p_cont_auto .p_items_null dl dd a.a_btn:visited {
+    background: #66cc00;
+    padding: 5px 15px;
+    color: #fff;
+}
+
+.p_lists_box .p_cont_auto .p_items_null dl dd a.a_btn:hover {
+    background: #5dba00;
+}
+
+/* 歌词 */
+.p_lists_box .lrc_right {
+    width: 300px;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.p_lists_box .lrc_right .lrc_mian {
+    height: 100%;
+}
+
+.p_lists_box .lrc_right .lrc_mian h2.sing_title {
+    top: 0;
+    left: 0;
+    width: 90%;
+    line-height: 70px;
+    padding: 0 5%;
+}
+
+.p_lists_box .lrc_right .lrc_mian .lrc_content {
+    line-height: 28px;
+    top: 70px;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.p_lists_box .lrc_right .lrc_mian .lrc_content .lrc_box {
+    padding-right: 15px;
+}
+
+/* 歌词为空 */
+.p_lists_box .lrc_right .lrc_null {
+    margin: 40% auto 0 auto;
+    width: 150px;
+}
+
+.p_lists_box .lrc_right .lrc_null i.ico {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -90px -148px no-repeat;
+}
+
+/* 下方操作 */
+.b_tool {
+    background: #000;
+    background: rgba(0, 0, 0, 0.2);
+    filter: "alpha(opacity=10)";
+    -ms-filter: "alpha(opacity=10)";
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+}
+
+.b_tool .b_tool_box {
+    padding: 0 330px 0 280px;
+    position: relative;
+}
+
+.b_tool .b_tool_box .tool_act {
+    display: none;
+    margin: 15px 0 0 0;
+}
+
+.b_tool .b_tool_box .tool_act .ck_act {
+    margin: 7px 15px 0 0;
+    display: inline;
+}
+
+.b_tool .b_tool_box .tool_act .ck_act input[type=checkbox] {
+    appearance: none;
+    -moz-appearance: normal;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background: url(../../../images/user/musicPlayer/p_icon.png) -240px 0 no-repeat;
+    outline: none;
+}
+
+.b_tool .b_tool_box .tool_act .ck_act input[type=checkbox]:hover {
+    background-position: -240px -16px;
+}
+
+.b_tool .b_tool_box .tool_act .ck_act input[type=checkbox]:checked {
+    background-position: -256px 0;
+}
+
+.b_tool .b_tool_box .tool_act a.a_btn {
+    border: #403c3c solid 1px;
+    padding: 5px 10px;
+    margin-right: 15px;
+}
+
+.b_tool .b_tool_box .tool_act a.change_btn {
+    border-color: #3c3c46;
+    background: #3c3c46;
+}
+
+.b_tool .b_tool_box .tool_act a.a_btn:hover {
+    border-color: #66cc00;
+    background: #66cc00;
+    color: #fff;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    transition-property: background-color;
+}
+
+.b_tool .b_tool_box .tool_act a.a_btn i.ico {
+    width: 16px;
+    height: 16px;
+    background: url(../../../images/user/musicPlayer/p_icon.png) no-repeat;
+    margin-right: 5px;
+    display: inline;
+}
+
+.b_tool .b_tool_box .tool_act a.del_btn i.ico {
+    background-position: -80px 0;
+}
+
+.b_tool .b_tool_box .tool_act a.clear_btn i.ico {
+    background-position: -112px 0;
+}
+
+.b_tool .b_tool_box .tool_act a.plyer_btn i.ico {
+    background-position: -16px 0;
+}
+
+.b_tool .b_tool_box .tool_act a.add_btn i.ico {
+    background-position: -128px 0;
+}
+
+.b_tool .b_tool_box .tool_act a.change_btn i.ico {
+    background-position: -224px 0;
+}
+
+.b_tool .b_tool_box .tool_act a.del_btn:hover i.ico {
+    background-position: -80px -16px;
+}
+
+.b_tool .b_tool_box .tool_act a.clear_btn:hover i.ico {
+    background-position: -112px -16px;
+}
+
+.b_tool .b_tool_box .tool_act a.plyer_btn:hover i.ico {
+    background-position: -16px -16px;
+}
+
+.b_tool .b_tool_box .tool_act a.add_btn:hover i.ico {
+    background-position: -128px -16px;
+}
+
+.b_tool .b_tool_box .tool_act a.change_btn:hover i.ico {
+    background-position: -224px -16px;
+}
+
+.animation {
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-delay: .1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 0.2s;
+    -moz-animation-delay: .1s;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: both;
+    animation-duration: 0.2s;
+    animation-delay: .1s;
+    animation-timing-function: ease;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+}
+
+@-moz-keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(20px)
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0)
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.fadeInTop {
+    -webkit-animation-name: fadeInTop;
+    -moz-animation-name: fadeInTop;
+    animation-name: fadeInTop
+}
+
+@-webkit-keyframes fadeoutTop {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px)
+    }
+}
+
+@-moz-keyframes fadeoutTop {
+    0% {
+        opacity: 1;
+        -moz-transform: translateY(0)
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translateY(-20px)
+    }
+}
+
+@keyframes fadeoutTop {
+    0% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+}
+
+.fadeoutTop {
+    -webkit-animation-name: fadeoutTop;
+    -moz-animation-name: fadeoutTop;
+    animation-name: fadeoutTop;
+}
+
+/* 滚动条*/
+/* MSPointer events - direct all pointer events to js */
+.mCustomScrollbar {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.mCustomScrollbar.mCS_no_scrollbar {
+    -ms-touch-action: auto;
+    touch-action: auto;
+}
+
+/* contains plugin's markup */
+.mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+}
+/*the highlight color of the current lyric line*/
+.current-line-0 {
+    color: #FAFA17;
+}
+.mCSB_container {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+/* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+.mCSB_scrollTools {
+    position: absolute;
+    width: 6px;
+    height: auto;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* contains the draggable element and dragger rail markup */
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+
+.mCSB_scrollTools,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+    -webkit-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+    transition: opacity .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.mCSB_scrollTools {
+    opacity: 0.75;
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)";
+}
+
+.mCS-autoHide > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
+    opacity: 0;
+    filter: "alpha(opacity=0)";
+    -ms-filter: "alpha(opacity=0)";
+}
+
+.mCustomScrollbar > .mCustomScrollBox > .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar > .mCustomScrollBox ~ .mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollBox:hover > .mCSB_scrollTools,
+.mCustomScrollBox:hover ~ .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox > .mCSB_scrollTools,
+.mCS-autoHide:hover > .mCustomScrollBox ~ .mCSB_scrollTools {
+    opacity: 0.75;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)";
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    position: relative;
+    width: 6px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 6px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)";
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.90);
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)";
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.85);
+    filter: "alpha(opacity=85)";
+    -ms-filter: "alpha(opacity=85)";
+}
+
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
+    filter: "alpha(opacity=90)";
+    -ms-filter: "alpha(opacity=90)";
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown,
+.mCSB_scrollTools .mCSB_buttonLeft,
+.mCSB_scrollTools .mCSB_buttonRight {
+
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    filter: "alpha(opacity=40)";
+    -ms-filter: "alpha(opacity=40)";
+}
+
+.lrc_content .mCSB_container {
+    margin: 0 5px;
+}
+
+.p_menu_left dd.p_sel a i.ico, #p_menu_left li.p_sel a i.ico, .p_song_lists .p_items .now_plays .row_item .row_s_tl .i_sort, .p_dj_lists .p_items .now_plays .ck_act .i_sort {
+    background: url(../../../images/user/musicPlayer/playing.gif) 0 0 no-repeat !important;
+    text-indent: -999px;
+}
+
