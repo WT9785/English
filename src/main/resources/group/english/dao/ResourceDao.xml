@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="group.english.dao.ResourceDao">
+    <!--    查询所有资源-->
+    <sql id="selectAll">SELECT * FROM resources r, typeofresource t  WHERE r.t_id = t.t_id</sql>
+    <!--    根据id修改资源-->
+    <sql id="changeResource">UPDATE resources r,typeofresource t
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="url != null and url != ''">
+                url = #{url},
+            </if>
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+            <if test="type != null and type != ''">
+                r.t_id = (
+                SELECT t.t_id from typeofresource t
+                WHERE t.type=#{type}
+                ),
+            </if>
+        </set>
+        WHERE id = #{id}
+        AND r.t_id=t.t_id
+    </sql>
+    <!--    添加资源-->
+    <sql id="addResource">INSERT INTO resources VALUES</sql>
+    <!--    根据id删除资源-->
+    <sql id="outResource">DELETE FROM resources</sql>
+    <!--    配置图片查询返回结果集-->
+    <resultMap id="ResourceMap" type="resource">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="url" property="url"/>
+        <result column="description" property="description"/>
+        <result column="note" property="note"/>
+        <result column="type" property="type"/>
+    </resultMap>
+    <!--                                                                    图片                                  -->
+    <!--查询所有图片信息-->
+    <select id="queryAllPic" resultMap="ResourceMap">
+        <include refid="selectAll"/>
+        AND t.type IN ( 'jpg', 'png' )
+    </select>
+    <!--    图片资源模糊查询-->
+    <select id="querypicByLike" resultMap="ResourceMap">
+        <include refid="selectAll"/>
+        AND (r.`name` like concat("%",#{value},"%")
+        OR
+        r.`description` like concat("%",#{value},"%")
+        )
+        AND t.type IN('png','jpg')
+    </select>
+    <!--    获取首页侧边轮播图-->
+    <select id="querySideNavPic" resultMap="ResourceMap">
+        SELECT
+            *
+        FROM
+            resources r
+        WHERE
+            r.note = 'lbc'
+    </select>
+    <!--    查找图片详情也轮播图-->
+    <select id="queryCenterNavPic" resultMap="ResourceMap">
+        SELECT
+            *
+        FROM
+            resources r
+        WHERE
+            r.note = 'lbm'
+    </select>
+    <!--    查找图片详情也轮播图缩略图-->
+    <select id="queryThumbnail" resultMap="ResourceMap">
+        SELECT
+            *
+        FROM
+            resources r
+        WHERE
+            r.note = 'lbmm'
+</select>
+<!--    获取图片详情页图片-->
+    <select id="querycPic" resultMap="ResourceMap">
+        SELECT
+            *
+        FROM
+            resources r
+        WHERE
+            r.note = 'cpic'
+    </select>
+    <!--                                                                        音频                                   -->
+    <!--    查询所有音频信息-->
+    <select id="queryAllaudio" resultMap="ResourceMap">
+        <include refid="selectAll"/>
+        AND t.type ='mp3'
+    </select>
+    <!--    音频资源模糊查询-->
+    <select id="queryaudioByLike" resultMap="ResourceMap">
+        <include refid="selectAll"/>
+        AND (r.`name` like concat("%",#{value},"%")
+        OR
+        r.`description` like concat("%",#{value},"%")
+        )
+        AND t.type = 'mp3'
+    </select>
+    <!--                                                                        视频                                  -->
+    <!--    查询所有视频信息-->
+    <select id="queryAllvideo" resultMap="ResourceMap">
+        <include refid="selectAll"/>
+        AND t.type ='mp4'
+    </select>
+    <!--    视频资源模糊查询-->
+    <select id="queryvideoByLike" resultMap="ResourceMap">
+        <include refid="selectAll"/>
+        AND (r.`name` like concat("%",#{value},"%")
+        OR
+        r.`description` like concat("%",#{value},"%")
+        )
+        AND t.type = 'mp4'
+    </select>
+    <!--                                                                        文本                                  -->
+    <!--    查询所有文本信息-->
+    <select id="queryAlltxt" resultMap="ResourceMap">
+        <include refid="selectAll"/>
+        AND t.type ='txt'
+    </select>
+    <!--    文本资源模糊查询-->
+    <select id="querytxtByLike" resultMap="ResourceMap">
+        <include refid="selectAll"/>
+        AND (r.`name` like concat("%",#{value},"%")
+        OR
+        r.`description` like concat("%",#{value},"%")
+        )
+        AND t.type = 'txt'
+    </select>
+
+    <!--    修改资源信息-->
+    <update id="updateResource" parameterType="resource">
+        <include refid="changeResource"/>
+    </update>
+    <!--    删除资源信息-->
+    <delete id="delResource">
+        <include refid="outResource"/>
+        where id=#{id}
+    </delete>
+    <!--    批量删除资源-->
+    <delete id="delResourceBatch" parameterType="java.util.List">
+        <include refid="outResource"/>
+        <where>
+            <foreach collection="ids" open="id in (" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </delete>
+    <!--    添加资源-->
+    <insert id="insertResource">
+        <include refid="addResource"/>
+        (0,#{name},#{url},#{description},(
+        SELECT t.t_id FROM typeofresource t WHERE t.type = #{type}
+        ))
+    </insert>
+<!--    根据id查询资源-->
+    <select id="queryById" resultMap="ResourceMap" parameterType="int">
+        SELECT
+            *
+        FROM
+            resources r
+        WHERE
+            r.id=#{id}
+    </select>
+</mapper>
